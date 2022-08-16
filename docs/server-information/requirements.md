@@ -10,7 +10,7 @@ nav_order: 1
 {: .fs-9 .fw-600 }
 
 ---
-Please check below to ensure you have met the following requirements before proceeding to the [Installation](server-installation.html).
+Please check below to ensure you have met the following requirements before proceeding to the [Installation](server-installation).
 
 ## <img src="https://cdn-icons-png.flaticon.com/512/7310/7310293.png" width="26" height="26" /> CPU
 

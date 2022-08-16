@@ -8,19 +8,27 @@ nav_order: 1
 
 Allowed Blitz3D/BlitzBasic Functions:
 
-[OpenFile](OpenFile.html)
-
-[WriteFile](WriteFile.html)
-
-[ReadFile](ReadFile.html)
-
-[CloseFile]
-
-[WriteLine]
-
-[WriteFloat]
-
-[WriteInt]
+| BlitzBasic Funtions | Description |
+|:-------------|:------------------|
+| [OpenFile](OpenFile) | Opens a file and is loaded into memory to be edited. |
+| [WriteFile](WriteFile) |  |
+| [ReadFile](ReadFile) |  |
+| [CloseFile](CloseFile) |  |
+| [WriteLine](WriteLine) |  |
+| [WriteFloat](WriteFloat) |  |
+| [WriteInt](WriteInt) |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 
 [WriteShort]
 

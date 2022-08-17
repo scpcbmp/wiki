@@ -17,7 +17,7 @@ The `server.cfg` is a configuration file which can be modified to run the server
 -----
 # <img src="https://cdn-icons-png.flaticon.com/512/4295/4295919.png" width="26" height="26" /> **Basic**
 
-Some of the configuration settings listed below will have a star (<img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />) marker next to them. This will indicate as a requirement for new or returning users who are setting up a server needs to change the following settings.
+Some of the configuration settings listed below will have a star (<img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />) marker next to them. This will serve as a recommendation for new or returning users who are configuring a server may need the following settings to be changed if applicable.
 
 -----
 ## **HostName**
@@ -46,33 +46,31 @@ port 50022
 ## **MapSeed**
 Sets the seed generation of the server, leave blank for a more random generation.
 
-Example: 
+Example:
 ```go
 //By default, mapseed is not set.
 mapseed
 //You write anything in mapseed and the server will generate it. 
 mapseed WhatEverTheSeedIWant
-mapseed c93w99wf93ypw9
-mapseed IT5M1N34N0M
 ```
 
 -----
 ## **NoCheat** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
 Enables/Restricts console access in-game for public use.
 
-Example: 
+Example:
 ```go
 //Console access available to the public. Set by default. NOT RECOMMENDED!
-nocheat 0
+nocheat false
 //Restricts console access to the public. Only available if using RCON Login.
-nocheat 1
+nocheat true
 ```
 
 -----
 ## **Voice**
 Enable/Disable voice chat used in-game.
 
-Example: 
+Example:
 ```go
 //Enables voice chat in-game. Set by default.
 voice true
@@ -84,9 +82,9 @@ voice false
 ## **MaxPlayers** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
 Sets how many players can be on the server at one time. 
 
-_TIP: The more players there are on the server at once, the more CPU the server takes._
+**_NOTE: The more players there are on the server at once, the more CPU the server consumes._**
 
-Example: 
+Example:
 ```go
 //Sets manximum amount of players that can be online at once. 16 is set by default.
 maxplayers 16
@@ -95,160 +93,302 @@ maxplayers 32
 ```
 
 -----
-## **JumpMode**
-Enable/Disable JUMP feature in-game. However, players can jump into unplayable zones in enabled. By default: true.
+## **Password**
+Sets the password for the server. 
 
-Example: `jumpmode true`
+Example:
+```go
+//By default, no password is set.
+password
+//ONLY make up a password if you are setting the server up for private uses or for other reasons.
+password Sup3r5tr0ngP4ssw0rd
+```
+
+-----
+## **RconPassword** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
+Sets the RCON console password. Used to gain "Administration" power via command "/rcon (password)" in the multiplayer chat.
+
+Example:
+```go
+//By default, there is no password set. NOT RECOMMENDED FOR PUBLIC SERVER!!!
+rconpassword
+//HIGHLY recommended to set a password for PUBLIC SERVERS!
+rconpassword Sup3r5tr0ngP4ssw0rd
+```
+
+-----
+## **JumpMode**
+Enable/Disable the jumping feature in-game. However, players can jump into unplayable zones if enabled.
+
+Example:
+```go
+//Enables the jumping feature in game. Set by default.
+jumpmode true
+//Disables the jumping feature in game.
+jumpmode false
+```
 
 -----
 ## **Difficulty**
-Changes the difficulty the server is running. By default: safe.
+Changes the difficulty of the game in the server.
 
-Example: `difficulty safe`
+Example:
+```go
+//Set the server difficulty to SAFE(Easy). Set by default.
+difficulty safe
+//Set the server difficulty to EUCLID(Normal).
+difficulty euclid
+//Set the server difficulty to KETER(Hard).
+difficulty keter
+```
 
 -----
-## **Tickrate**
-Changes the tick speed of the server. Impacts the performance. By default: 64.
+## **Breach** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
+Enable/Disable the Breach gamemode.
 
-Example: `tickrate 64`
-
------
-## **Breach**
-Enables or disables the Breach gamemod. By default false.
-
-Example: `breach true`
+Example:
+```go
+//Disables the Breach gamemode. Set by default.
+breach false
+//Enables the Breach gamemode.
+breach true
+```
 
 -----
 # <img src="https://cdn-icons-png.flaticon.com/512/4789/4789514.png" width="26" height="26" /> **Advanced**
-This options are not required for server to run, however they are useful.
+
+These sets of options are more technical and can impact how the server functions.
 
 -----
-## **Introenabled**
-Enable or disable the Intro. By default: 0.
+## **IntroEnabled**
+Enable/Disable the game introduction (This option is similar to the singleplayer introduction).
 
-Example: `introenabled 0`
+Example:
+```go
+//Disables the game introduction. Set by default.
+introenabled false
+//Enables the game introduction.
+introenabled true
+```
 
 -----
 ## **Timeout**
-Changes the time required to time out. By default: 60000.
+Changes the time value required before a player to times out.
 
-Example: `timeout 60000`
-
------
-## **Password**
-Sets the password for the server. By default: Isn't set.
-
-Example: `password SuperStrongPassword`
+Example:
+```go
+//Set by default.
+timeout 60000 //60000 (milliseconds) <-> 60 (seconds)
+```
 
 -----
-## **Gravity**
-Change gravity on server, avoid putting high numbers. By default: 0.0023.
+## **KeepInventory**
+Enable/Disable keep inventory feature.
 
-Example: `gravity 0.0023`
-
------
-## **Rconpassword**
-Enable/change the rcon console password. By default: Isn't set.
-
-Example: `rconpassword StrongPassword123`
-
------
-## **Keepinventory**
-Enable or disable keep inventory feature. By default: 0.
-
-Example: `keepinventory 1`
+Example:
+```go
+//Disables keep inventory feature. Set by default.
+keepinventory false
+//Enables keep inventory feature.
+keepinventory true
+```
 
 -----
-## **Mapsize**
-Change the map size. By default: 4.
+## **MapSize**
+Changes the size of the map generation.
 
-Example: `mapsize 2`
+Example:
+```go
+//Set by default.
+mapsize 4
+//Recommended for smaller and quicker gameplay.
+mapsize 2
+```
 
 -----
-## **Gamestate**
-Change the game state of the server. By default: Isn't set.
+## **GameState**
+Changes the game state of the server.
 
-Example: `gamestate Started`
+Example:
+```go
+//By default, there is no state set.
+gamestate
+//Sets the game state to "OPEN".
+gamestate Open
+//Sets the game state to "STARTED".
+gamestate Started
+```
 
 -----
 ## **Description**
-Add or change server description. By default: Isn't set.
+Sets the description of the server.
 
-Example: `description Join this super duper server.`
+Example:
+```go
+//By default, there is no description set.
+description
+//Set the description text. 
+description This is an awesome server!
+```
 
 -----
-## **Weburl**
-Add or change the server web url. By default: Isn't set.
+## **WebURL**
+Sets the server web url.
 
-Example: `weburl https://google.com`
+Example:
+```go
+//By default, there is no website url set.
+weburl
+//Set the link of the url.
+weburl https://google.com/
+```
 
 -----
-## **Custommap**
-Use custom map instead of randomly generated. Warning performance heavy. By default: Isn't set.
+## **CustomMap**
+Sets and loads a custom map into the server. Performance will vary.
 
-Example: `custommap big.cbmap2`
+Example:
+```go
+//By default, there is no map set.
+custommap
+//Set the name of the map to load.
+custommap big.cbmap2
+```
 
 -----
 ## **Script**
-Load server scripts. By default: Isn't set.
+Sets and loads a script into the server.
 
-Example: `script script fun.gsc`
-
------
-# Breach mode - 💥
-Settings that change breach gamemode a little, settings are not required.
-
-This configuration requires [breach](#breach) to be `true`. Please ensure this is enabled for these settings to take effect.
-{: .fs-4 .fw-300 .text-green-100 }
-
------
-## Breachlight
-Makes facility brighter in breach mode. By default: false.
-
-Example: `breachlight true`
+Example:
+```go
+//By default, there is no script set.
+script
+//Set the name of the script to load.
+script nameofthefile.gsc
+//or...
+scripttext nameofthefile.gsc
+```
 
 -----
-## Breachchat
-Enables or disables chat in breach gamemod. By default: 1.
-
-Example: `breachchat 1`
-
------
-## Breachtime
-Change the time of the breach mode round. By default: 900000.
-
-Example: `Breachtime 900000`
-
------
-## Breach_onlydeathmatch
-Change breach gamemode to deathmatch one. By default: false.
-
-Example: `breach_onlydeathmatch false`
-
------
-# Optional - 🔅
+# <img src="https://cdn-icons-png.flaticon.com/512/2195/2195441.png" width="26" height="26" /> **Expert**
 This options are optional, and shouldn't be change unless needed.
 
 -----
-## Stacksize
-Change the stack size in server. By default: Isn't set.
+## **TickRate**
+Changes the tick speed of the server. Performance will vary.
 
-Example: `stacksize 8192`
-
------
-## Voice_quality
-Used to change the voice quality. By default: 44000.
-
-Example: `voice_quality 44000`
+Example:
+```go
+//Set by default.
+tickrate 64
+```
 
 -----
-## Logsoff
-Disable saving of the log file. By default: 0.
+## **Gravity**
+Changes the gravity on server, mainly affecting `jumpmode`.
 
-Example: `logsoff 0`
+Example:
+```go
+//Avoid using high numbers. DO NOT change unless you know what you are doing! Set by default.
+gravity 0.0023
+```
 
 -----
-## Longculling
-Disable culling system, NOT RECOMMENDED. By default: Isn't set.
+## StackSize
+Sets the stack size in server.
 
-Example: `longculling 0`
+Example:
+```go
+//By default, there is no size set.
+stacksize
+//Set the stack size.
+stacksize 8192
+```
+
+-----
+## VoiceQuality
+Sets the voice quality for the server.
+
+**_NOTE: This feature has been locked and fixed to output the maximum quality._**
+
+Example:
+```go
+//Set by default.
+voice_quality 44000
+```
+
+-----
+## LogsOff
+Enable/Disable log saves for the server.
+
+Example:
+```go
+//Enables log saving. Set by default.
+logsoff false
+//Disables log saving.
+logsoff true
+```
+
+-----
+## LongCulling
+Disable culling system, NOT RECOMMENDED.
+
+Example:
+```go
+//Set by default.
+longculling 0
+```
+
+-----
+# <img src="https://cdn-icons-png.flaticon.com/512/1100/1100349.png" width="26" height="26" /> **Breach Mode**
+
+The configuration settings listed below are for `Breach Mode` only. 
+
+This configuration requires [Breach](#breach-) to be `true`. Please ensure this is enabled for these settings to take effect.
+{: .fs-4 .fw-300 .text-green-100 }
+
+-----
+## BreachLight
+Enable/Disable brighter in Breach Mode within the facility.
+
+Example:
+```go
+//Disables brighter light in Breach Mode. Set by default.
+breachlight false
+//Enables brighter light in Breach Mode.
+breachlight true
+```
+
+-----
+## BreachChat
+Enable/Disable chatting in Breach Mode.
+
+Example:
+```go
+//Enables chatting feature in Breach Mode. Set by default.
+breachchat true
+//Disables chatting feature in Breach Mode.
+breachchat false
+```
+
+-----
+## BreachTime
+Sets the max time limit of Breach Mode per round.
+
+Example:
+```go
+//Set by default.
+breachtime 900000 // 900000 (milliseconds) <-> 900 (seconds) or 15 (minutes)
+```
+
+-----
+## BreachOnlyDeathmatch
+Enable/Disable the Breach Mode to deathmatch only.
+
+Example:
+```go
+//Disable Deathmatch-only mode. Set by default.
+breach_onlydeathmatch false
+//Enables Deathmatch-only mode.
+breach_onlydeathmatch true
+```

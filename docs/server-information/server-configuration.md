@@ -4,7 +4,7 @@ title: Server Configuration
 parent: Server Information
 has_children: true
 nav_order: 3
-has_toc: false
+has_toc: true
 ---
 
 # **Server Configuration Types**

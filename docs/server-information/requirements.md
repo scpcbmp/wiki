@@ -10,7 +10,7 @@ nav_order: 1
 {: .fs-9 .fw-600 }
 
 ---
-Please check below to ensure you have met the following requirements before proceeding to the [Installation](server-installation).
+Please review the requirements listed below before proceeding to the [Installation](server-installation).
 
 ## <img src="https://cdn-icons-png.flaticon.com/512/7310/7310293.png" width="26" height="26" /> CPU
 
@@ -58,12 +58,9 @@ At least **10** MB/s (or equivalent to **80** Mbps) is required for server to wo
 
 **_NOTE: The information above was provided by Head Developer of the Multiplayer Mod._**
 
-To host a server at home you may need to configure your router to use a static ip if you want to run the server 24/7. However, if you're only planning to play with friends a static ip may not be necesarry. 
-
-**_NOTE: The default server port is `50021`._**
+If you wish to run a server 24/7, you might need to set up your router to utilize a static IP address. However, a static IP might not be required if you simply intend to play with your friends.
 
 -----
 ## <img src="https://cdn-icons-png.flaticon.com/512/7310/7310395.png" width="26" height="26" /> Operating System
 
-The server application was made and designed for Windows, however, using something like Wine (on Linux) or a decent emulator on macOS will most likely be able to run the server okay.
-
+The server program was created and developed for Windows; however, utilizing Wine (on Linux) or a good emulator on macOS should be enough to run the server.

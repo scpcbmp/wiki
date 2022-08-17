@@ -2,7 +2,7 @@ title: "SCP:CB Multiplayer"
 # Uncomment for development.
 # theme: "just-the-docs"
 remote_theme: just-the-docs/just-the-docs
-logo: "/assets/images/icon-1200x1200.png"
+logo: "/assets/images/logo-602x150.png"
 color_scheme: dark
 
 gh_edit_link: true # show or hide edit this page link

@@ -17,91 +17,43 @@ Allowed Blitz3D/BlitzBasic Functions:
 | [WriteLine](WriteLine) |  |
 | [WriteFloat](WriteFloat) |  |
 | [WriteInt](WriteInt) |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| [WriteShort]() |  |
+| [WriteByte]() |  |
+| [ReadLine]() |  |
+| [ReadFloat]() |  |
+| [ReadInt]() |  |
+| [ReadShort]() |  |
+| [ReadByte]() |  |
+| [Chr]() |  |
+| [Asc]() |  |
+| [FileType]() |  |
+| [FileSize]() |  |
+| [SeekFile]() |  |
+| [FilePos]() |  |
+| [WriteBytes]() |  |
+| [ReadBytes]() |  |
+| [MilliSecs]() |  |
+| [Delay]() |  |
+| [Left]() |  |
+| [Right]() |  |
+| [Instr]() |  |
+| [Len]() |  |
+| [Int]() |  |
+| [Str]() |  |
+| [Float]() |  |
 
-[WriteShort]
-
-[WriteByte]
-
-[ReadLine]
-
-[ReadFloat]
-
-[ReadInt]
-
-[ReadShort]
-
-[ReadByte]
-
-[Chr]
-
-[Asc]
-
-[FileType]
-
-[FileSize]
-
-[SeekFile]
-
-[FilePos]
-
-[WriteBytes]
-
-[ReadBytes]
-
-[MilliSecs]
-
-[Delay]
-
-[Left]
-
-[Right]
-
-[Instr]
-
-[Len]
-
-[Int]
-
-[Str]
-
-[Float]
-
-#define :Bank 
-
-CreateBank
-
-FreeBank
-
-BankSize
-
-ResizeBank
-
-CopyBank
-
-PeekByte
-
-PeekShort
-
-PeekInt
-
-PeekFloat
-
-PokeByte
-
-PokeShort
-
-PokeInt
-
-PokeFloat
+| BlitzBasic *BANK* Funtions | Description |
+|:-------------|:------------------|
+| [CreateBank]() |  |
+| [FreeBank]() |  |
+| [BankSize]() |  |
+| [ResizeBank]() |  |
+| [CopyBank]() |  |
+| [PeekByte]() |  |
+| [PeekShort]() |  |
+| [PeekInt]() |  |
+| [PeekFloat]() |  |
+| [PokeByte]() |  |
+| [PokeShort]() |  |
+| [PokeInt]() |  |
+| [PokeFloat]() |  |

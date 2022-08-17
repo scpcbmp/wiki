@@ -9,8 +9,8 @@ nav_order: 6
 ## Variables
 {: .fs-7 }
 
-Tip: Adding the following command to your script `#include "includes\multiplayer_core.inc"` allows you to use variable names directly
-{: .fs-4 .fw-300 }
+Tip: Adding the following command to your script `#include "includes\multiplayer_core.inc"` allows you to use variable names directly.
+{: .fs-4 .fw-300 .text-green-100 }
 
 | Player animations | Assigned Value |
 |:-------------|:------------------|

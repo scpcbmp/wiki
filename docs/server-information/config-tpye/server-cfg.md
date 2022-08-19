@@ -8,7 +8,7 @@ nav_order: 1
 
 # **Server Configuration File**
 {: .fs-9 .fw-600 }
-----
+-----
 
 The `server.cfg` is a configuration file which can be modified to run the server. It is one of the core files to have and is required to run the server. This file is located in the **root** folder.
 
@@ -27,6 +27,18 @@ Example:
 ```go
 //This will be displayed on the front Multiplayer Page.
 hostname SCP Vanilla Server
+```
+
+-----
+## **Description**
+Sets the description of the server.
+
+Example:
+```go
+//By default, there is no description set.
+description
+//Set the description text. 
+description This is an awesome server!
 ```
 
 -----
@@ -220,15 +232,39 @@ gamestate Started
 ```
 
 -----
-## **Description**
-Sets the description of the server.
+## **DisableAuthKey**
+Enable/Disable all incoming authorization keys on connection.
 
 Example:
 ```go
-//By default, there is no description set.
-description
-//Set the description text. 
-description This is an awesome server!
+//Enables all incoming authorization keys. Set by default.
+disableauthkey false
+//Disables all incoming authorization keys.
+disableauthkey true
+```
+
+-----
+## **DisableTimestamp**
+Enable/Disable timestamps for the server logs.
+
+Example:
+```go
+//Enables server timestamps. Set by default.
+disabletimestamp false
+//Disables server timestamps.
+disabletimestamp true
+```
+
+-----
+## **NoClipAntiCheat**
+Enable/Disable anti-cheat for no clipping on the server.
+
+Example:
+```go
+//Enables anti-cheat for no clipping. Set by default.
+noclipanticheat true
+//Disables anti-cheat for no clipping.
+noclipanticheat false
 ```
 
 -----
@@ -241,6 +277,30 @@ Example:
 weburl
 //Set the link of the url.
 weburl https://google.com/
+```
+
+-----
+## **MenuHTML**
+Sets the server HTML website when joining the server.
+
+Example:
+```go
+//By default, there is no website url set.
+menuhtml
+//Set the link of the url.
+menuhtml https://google.com/
+```
+
+-----
+## **RestartMenuHTML**
+Sets the server HTML website when the round is restarting on the server.
+
+Example:
+```go
+//By default, there is no website url set.
+restartmenuhtml
+//Set the link of the url.
+restartmenuhtml https://google.com/
 ```
 
 -----

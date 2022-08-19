@@ -3,44 +3,50 @@ layout: default
 title: Server Function API
 parent: Server Functions
 grand_parent: Scripting Language
-nav_order: 1
+nav_order: 2
 ---
+# **Server Functions API**
+{: .fs-9 .fw-600 }
+A complete list of functions that can used when scripting for your server. 
 
-Allowed Blitz3D/BlitzBasic Functions:
+## Allowed Blitz3D/BlitzBasic Functions:
+{: .fs-4 .fw-600 }
 
-| BlitzBasic Funtions | Description |
+This contains a list of Blitz3D functions that can be used when making a script for the server.
+
+| BlitzBasic Functions | Description |
 |:-------------|:------------------|
-| [OpenFile](OpenFile) | Opens a file and is loaded into memory to be edited. |
-| [WriteFile](WriteFile) |  |
+| [OpenFile](OpenFile) | This command opens the designated file and prepares it to be updated. The file must exists since this function will not create a new file. |
+| [WriteFile](WriteFile) | Use this function to write a whole line of data to the file. This function can be used to make plain text files. |
 | [ReadFile](ReadFile) |  |
 | [CloseFile](CloseFile) |  |
 | [WriteLine](WriteLine) |  |
 | [WriteFloat](WriteFloat) |  |
 | [WriteInt](WriteInt) |  |
-| [WriteShort]() |  |
-| [WriteByte]() |  |
-| [ReadLine]() |  |
-| [ReadFloat]() |  |
-| [ReadInt]() |  |
-| [ReadShort]() |  |
-| [ReadByte]() |  |
-| [Chr]() |  |
-| [Asc]() |  |
-| [FileType]() |  |
-| [FileSize]() |  |
-| [SeekFile]() |  |
-| [FilePos]() |  |
-| [WriteBytes]() |  |
-| [ReadBytes]() |  |
-| [MilliSecs]() |  |
-| [Delay]() |  |
-| [Left]() |  |
-| [Right]() |  |
-| [Instr]() |  |
-| [Len]() |  |
-| [Int]() |  |
-| [Str]() |  |
-| [Float]() |  |
+| [WriteShort](WriteShort) |  |
+| [WriteByte](WriteByte) |  |
+| [ReadLine](ReadLine) |  |
+| [ReadFloat](ReadFloat) |  |
+| [ReadInt](ReadInt) |  |
+| [ReadShort](ReadShort) |  |
+| [ReadByte](ReadByte) |  |
+| [Chr](Chr) |  |
+| [Asc](Asc) |  |
+| [FileType](FileType) |  |
+| [FileSize](FileSize) |  |
+| [SeekFile](SeekFile) |  |
+| [FilePos](FilePos) |  |
+| [WriteBytes](WriteBytes) |  |
+| [ReadBytes](ReadBytes) |  |
+| [MilliSecs](MilliSecs) |  |
+| [Delay](Delay) |  |
+| [Left](Left) |  |
+| [Right](Right) |  |
+| [Instr](Instr) |  |
+| [Len](Len) |  |
+| [Int](Int) |  |
+| [Str](Str) |  |
+| [Float](Float) |  |
 
 | BlitzBasic *BANK* Funtions | Description |
 |:-------------|:------------------|
@@ -57,3 +63,73 @@ Allowed Blitz3D/BlitzBasic Functions:
 | [PokeShort]() |  |
 | [PokeInt]() |  |
 | [PokeFloat]() |  |
+
+
+## Server Callback Function:
+{: .fs-4 .fw-600 }
+
+| Server Functions | Description |
+|:-------------|:------------------|
+| [OnBadIncomingConnection](OnBadIncomingConnection) | |
+| [OnConnectionResponse](OnConnectionResponse) | |
+| [OnIncomingConnection](OnIncomingConnection) | |
+| [OnLostConnectionWithCentralServer](OnLostConnectionWithCentralServer) | |
+| [OnMapUpdate](OnMapUpdate) | |
+| [OnScriptLoaded](OnScriptLoaded) | |
+| [OnCheatDetected](OnCheatDetected) |  |
+| [OnServerStart](OnServerStart) | |
+| [OnServerUpdate](OnServerUpdate) | |
+| [OnReceiveRawPacket](OnReceiveRawPacket) | |
+
+| Player Functions | Description |
+|:-------------|:------------------|
+| [OnPlayerConnect](OnPlayerConnect) | |
+| [OnPlayerChat](OnPlayerChat) | |
+| [OnPlayerConsole](OnPlayerConsole) | |
+| [OnPlayerDownloadFile](OnPlayerDownloadFile) | |
+| [OnPlayerBotConnect](OnPlayerBotConnect) | |
+| [OnPlayerDisconnect](OnPlayerDisconnect) | |
+| [OnPlayerMouseHit](OnPlayerMouseHit) | |
+| [OnPlayerRequestFiles](OnPlayerRequestFiles) | |
+| [OnPlayerRconIncorrect](OnPlayerRconIncorrect) | |
+| [OnPlayerRconAuthorized](OnPlayerRconAuthorized) | |
+
+## Game Callback Function:
+{: .fs-4 .fw-600 }
+
+| Player Functions | Description |
+|:-------------|:------------------|
+| [OnPlayerSpeaking](OnPlayerSpeaking) | |
+| [OnPlayerTriggered096](OnPlayerTriggered096) | |
+| [OnPlayerShoot](OnPlayerShoot) | |
+| [OnPlayerShootRocket](OnPlayerShootRocket) | |
+| [OnPlayerRequestNewRole](OnPlayerRequestNewRole) | |
+| [OnPlayerHitPlayer](OnPlayerHitPlayer) | |
+| [OnPlayerKillPlayer](OnPlayerKillPlayer) | |
+| [OnPlayerActivateFemurBreaker](OnPlayerActivateFemurBreaker) | |
+| [OnPlayerRequestExplosion](OnPlayerRequestExplosion) | |
+| [OnPlayAnnouncement](OnPlayAnnouncement) | |
+| [OnPlayerRequestUnlockExits](OnPlayerRequestUnlockExits) | |
+| [OnPlayerSpawnItem](OnPlayerSpawnItem) | |
+| [OnPlayerTakeItem](OnPlayerTakeItem) | |
+| [OnPlayerDropItem](OnPlayerDropItem) | |
+| [OnPlayerClickButton](OnPlayerClickButton) | |
+| [OnPlayerRotateLever](OnPlayerRotateLever) | |
+| [OnPlayerReleaseSound](OnPlayerReleaseSound) | |
+| [OnPlayerUseItem](OnPlayerUseItem) | |
+| [OnPlayerUse1162](OnPlayerUse1162) | |
+| [OnPlayerRequestNoTarget](OnPlayerRequestNoTarget) | |
+| [OnPlayerCreateDecal](OnPlayerCreateDecal) | |
+| [OnPlayerDropGrenade](OnPlayerDropGrenade) | |
+| [OnPlayerGetNewRole](OnPlayerGetNewRole) | |
+| [OnPlayerEscape](OnPlayerEscape) | |
+| [OnPlayerEscapeButDead](OnPlayerEscapeButDead) | |
+| [OnPlayerCuffPlayer](OnPlayerCuffPlayer) | |
+| [OnPlayerDeactivateWarheads](OnPlayerDeactivateWarheads) | |
+| [OnPlayerActivateWarheads](OnPlayerActivateWarheads) | |
+| [OnPlayerSCPContained](OnPlayerSCPContained) | |
+
+| Spawn Functions | Description |
+|:-------------|:------------------|
+| [OnSpawnMTF](OnSpawnMTF) | |
+| [OnSpawnChaos](OnSpawnChaos) | |

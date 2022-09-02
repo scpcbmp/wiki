@@ -19,5 +19,5 @@ To access the workshop click [here](https://steamcommunity.com/app/1782380/works
 <img src="/assets/images/displayingworkshopbutton.png"/>
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/3782/3782149.png" width="26" height="26" /> **How it Works?**
+# <img src="https://cdn-icons-png.flaticon.com/512/3782/3782149.png" width="32" height="32" /> **How it Works?**
 The workshop works by clicking the `Subscribe` button on an item that you are interested in and then after that, normally launch the game. However, due to the **_limitations_** and **_functionality_** of the game, you are more than likely going to run into a bug or a Memory Access Violation (MAV) error. This may be caused by if the mod(s) overlap or come into conflict with another.

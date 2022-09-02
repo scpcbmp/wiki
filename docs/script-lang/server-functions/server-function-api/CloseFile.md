@@ -3,8 +3,7 @@ layout: default
 title: OpenFile
 nav_exclude: true
 ---
-<a href="javascript:history.back()">Go Back</a>
-{: .btn }
+<button onclick="javascript:history.back()" type="button">&nbsp;Go Back</button>{: .btn }
 
 ## CloseFile
 {: .fs-9 .fw-600 }

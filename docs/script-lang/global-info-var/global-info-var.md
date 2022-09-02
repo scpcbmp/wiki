@@ -44,6 +44,7 @@ Tip: Adding the following command to your script `#include "includes\multiplayer
 
 | Class Types | Assigned Value |
 |:-------------|:------------------|
+| TYPE_SPECTATOR | 0 |
 | TYPE_NTF | 1 |
 | TYPE_GUARD | 2 |
 | TYPE_CLASSD | 3 |
@@ -58,6 +59,9 @@ Tip: Adding the following command to your script `#include "includes\multiplayer
 | TYPE_966 | 12 |
 | TYPE_ZOMBIE | 13 |
 | TYPE_096 | 14 |
+| TYPE_860 | 15 |
+| TYPE_035 | 16 |
+| TYPE_LOBBY | 17 |
 
 | Collisions | Assigned Value |
 |:-------------|:------------------|

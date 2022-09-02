@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Server Configuration
+title: Server Configurations
 parent: Server Information
 has_children: true
 nav_order: 3

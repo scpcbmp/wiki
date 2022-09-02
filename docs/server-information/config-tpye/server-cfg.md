@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Server Configuration File
-parent: Server Configuration
+parent: Server Configurations
 grand_parent: Server Information
 nav_order: 1
 ---
@@ -15,7 +15,7 @@ The `server.cfg` is a configuration file which can be modified to run the server
 **_NOTE: For new users, please read thoroughly when setting up a server._**
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/4295/4295919.png" width="26" height="26" /> **Basic**
+# <img src="https://cdn-icons-png.flaticon.com/512/4295/4295919.png" width="32" height="32" /> **Basic**
 
 Some of the configuration settings listed below will have a star (<img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />) marker next to them. This will serve as a recommendation for new or returning users who are configuring a server may need the following settings to be changed if applicable.
 
@@ -50,7 +50,7 @@ Example:
 //ONLY CHANGE THIS IF YOU ARE CREATING MORE THAN ONE (1) SERVER.
 //Server 1 Config. Set by default.
 port 50021
-//Server 2 Config
+//Server 2 Config.
 port 50022
 ```
 
@@ -91,6 +91,18 @@ voice false
 ```
 
 -----
+## **MinPlayersToStart** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
+Sets how many players are needed to start the game. 
+
+Example:
+```go
+//Sets the minimum needed requirement for the game to start. Set by default.
+minplayerstostart 0
+//Sets for recommended amount for public servers.
+minplayerstostart 4
+```
+
+-----
 ## **MaxPlayers** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
 Sets how many players can be on the server at one time. 
 
@@ -98,10 +110,12 @@ Sets how many players can be on the server at one time.
 
 Example:
 ```go
-//Sets manximum amount of players that can be online at once. 16 is set by default.
+//Sets manximum amount of players that can be online at once. Set by default.
 maxplayers 16
-//Recommended amount for public servers.
+//Set for recommended amount for public servers.
 maxplayers 32
+//Sets manximum amount of players that can be online at once.
+maxplayers 64
 ```
 
 -----
@@ -167,7 +181,7 @@ breach true
 ```
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/4789/4789514.png" width="26" height="26" /> **Advanced**
+# <img src="https://cdn-icons-png.flaticon.com/512/4789/4789514.png" width="32" height="32" /> **Advanced**
 
 These sets of options are more technical and can impact how the server functions.
 
@@ -190,7 +204,7 @@ Changes the time value required before a player to times out.
 Example:
 ```go
 //Set by default.
-timeout 60000 //60000 (milliseconds) <-> 60 (seconds)
+timeout 30000 //30000 (milliseconds) <-> 30 (seconds)
 ```
 
 -----
@@ -206,15 +220,37 @@ keepinventory true
 ```
 
 -----
+## **ResetTimerAfterConnect**
+Enable/Disable the reset timer in the lobby countdown if someone joins the server.
+
+Example:
+```go
+//Enables reset timer. Set by default.
+resettimerafterconnect true
+//Disables reset timer.
+resettimerafterconnect false
+```
+
+-----
+## **RoundsLimitPerStart**
+Sets the number of rounds before the server application restarts.
+
+Example:
+```go
+//Server application restarts after 2 rounds of gameplay. Set by default.
+roundslimitperstart 2
+```
+
+-----
 ## **MapSize**
 Changes the size of the map generation.
 
 Example:
 ```go
-//Set by default.
-mapsize 4
-//Recommended for smaller and quicker gameplay.
+//Recommended for smaller and quicker gameplay. Set by default.
 mapsize 2
+//Increases the size of of the map generation.
+mapsize 4
 ```
 
 -----
@@ -225,8 +261,8 @@ Example:
 ```go
 //By default, there is no state set.
 gamestate
-//Sets the game state to "OPEN".
-gamestate Open
+//Sets the game state to "LOBBY".
+gamestate Lobby
 //Sets the game state to "STARTED".
 gamestate Started
 ```
@@ -280,6 +316,18 @@ weburl https://google.com/
 ```
 
 -----
+## **FullSynchronization**
+Enable/Disable synchronization for to match all server-side actions made from the connected clients.
+
+Example:
+```go
+//Enables synchronization to match all server-side actions. Set by default.
+fullsynchronization true
+//Disables synchronization to match all server-side actions.
+fullsynchronization false
+```
+
+-----
 ## **MenuHTML**
 Sets the server HTML website when joining the server.
 
@@ -330,7 +378,7 @@ scripttext nameofthefile.gsc
 ```
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/2195/2195441.png" width="26" height="26" /> **Expert**
+# <img src="https://cdn-icons-png.flaticon.com/512/2195/2195441.png" width="32" height="32" /> **Expert**
 This options are optional, and shouldn't be change unless needed.
 
 -----
@@ -340,7 +388,7 @@ Changes the tick speed of the server. Performance will vary.
 Example:
 ```go
 //Set by default.
-tickrate 64
+tickrate 128
 ```
 
 -----
@@ -354,19 +402,17 @@ gravity 0.0023
 ```
 
 -----
-## StackSize
+## **StackSize**
 Sets the stack size in server.
 
 Example:
 ```go
-//By default, there is no size set.
-stacksize
-//Set the stack size.
-stacksize 8192
+//Set by default.
+stacksize 512
 ```
 
 -----
-## VoiceQuality
+## **VoiceQuality**
 Sets the voice quality for the server.
 
 **_NOTE: This feature has been locked and fixed to output the maximum quality._**
@@ -374,11 +420,11 @@ Sets the voice quality for the server.
 Example:
 ```go
 //Set by default.
-voice_quality 44000
+voice_quality 48000
 ```
 
 -----
-## LogsOff
+## **LogsOff**
 Enable/Disable log saves for the server.
 
 Example:
@@ -390,7 +436,7 @@ logsoff true
 ```
 
 -----
-## LongCulling
+## **LongCulling**
 Disable culling system, NOT RECOMMENDED.
 
 Example:
@@ -400,7 +446,51 @@ longculling 0
 ```
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/1100/1100349.png" width="26" height="26" /> **Breach Mode**
+## **EventProb**
+Sets the event probability, has no known use.
+
+Example:
+```go
+//Set by default.
+eventprob
+```
+
+-----
+## **CentralServer**
+Enable/Disable CentralServer or use SteamGameServer (needs Steam to use SteamGameServer) as an alternative, has no known use.
+
+Example:
+```go
+//Enables between the CentralServer and dedicated server. Set by default.
+centralserver true
+//Disables between the CentralServer and dedicated server and uses SteamGameServer instead.
+centralserver false
+```
+
+-----
+## **CentralServerTCPRequest**
+Sets central server incoming connection request to either TCP or UDP, has no known use.
+
+Example:
+```go
+//Sets server to use TCP connections. Set by default.
+centralservertcprequest tcp
+//Sets server to use UDP connections.
+centralservertcprequest udp
+```
+
+-----
+## **SpeedHackRate**
+Sets speedhack rates, has no known use.
+
+Example:
+```go
+//Set by default.
+speedhack_rate 100000.0  //Setting to 100000.0 will disable speedhack anticheat.
+```
+
+-----
+# <img src="https://cdn-icons-png.flaticon.com/512/1100/1100349.png" width="32" height="32" /> **Breach Mode**
 
 The configuration settings listed below are for `Breach Mode` only. 
 
@@ -408,7 +498,7 @@ This configuration requires [Breach](#breach-) to be `true`. Please ensure this 
 {: .fs-4 .fw-300 .text-green-100 }
 
 -----
-## BreachLight
+## **BreachLight**
 Enable/Disable brighter in Breach Mode within the facility.
 
 Example:
@@ -420,29 +510,29 @@ breachlight true
 ```
 
 -----
-## BreachChat
+## **BreachChat** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
 Enable/Disable chatting in Breach Mode.
 
 Example:
 ```go
-//Enables chatting feature in Breach Mode. Set by default.
-breachchat true
-//Disables chatting feature in Breach Mode.
+//Disables chatting feature in Breach Mode. Set by default.
 breachchat false
+//Enables chatting feature in Breach Mode.
+breachchat true
 ```
 
 -----
-## BreachTime
+## **BreachTime** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
 Sets the max time limit of Breach Mode per round.
 
 Example:
 ```go
 //Set by default.
-breachtime 900000 // 900000 (milliseconds) <-> 900 (seconds) or 15 (minutes)
+breachtime 600000 // 600000 (milliseconds) <-> 600 (seconds) or 10 (minutes)
 ```
 
 -----
-## BreachOnlyDeathmatch
+## **BreachOnlyDeathmatch**
 Enable/Disable the Breach Mode to deathmatch only.
 
 Example:

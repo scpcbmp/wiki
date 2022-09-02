@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Game Initialization File
-parent: Server Configuration
+parent: Server Configurations
 grand_parent: Server Information
 nav_order: 2
 ---
@@ -15,12 +15,12 @@ The `game.ini` is a initialization file which can be modified to run the server.
 **_NOTE: This settings can only be configured if `fullsynchronization 1` is set in `server.cfg`._**
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/2579/2579208.png" width="26" height="26" /> **Player Configurations**
+# <img src="https://cdn-icons-png.flaticon.com/512/2579/2579208.png" width="32" height="32" /> **Player Configurations**
 
 The configurations listed below ONLY affects the player behaviors, and not the server.
 
 -----
-## Falldamage
+## **FallDamage**
 Enable/Disable fall damage feautures for player.
 
 Example:
@@ -30,56 +30,119 @@ falldamage = 0
 ```
 
 -----
-## Prediction
+## **Prediction**
 Enable/Disable server checks for prediction of players movement. 
+
+**_NOTE: This feature does not work and is no longer in use!!_**
 
 Example:
 ```go
-//Set by default.
+//Set by default. 
 prediction = 0
 ```
 
 -----
-## Interpolation
-Enable/Disable smooth movements from player.
+## **Interpolation**
+Enable/Disable smooth movements from player. May impact performance.
 
 Example:
 ```go
-//Set by default.
+//Disables smooth player movement. Set by default.
 interpolation = 0
+//Enables smooth player movement.
+interpolation = 1
 ```
 
 -----
-## Playertoplayercollision
-Enable/Disable collision between players in the server.
+## **PlayerToPlayerCollision**
+Enable/Disable collision between players in the server. 
+
+**_NOTE: This feature only works if `interpolation - 1' is set._**
 
 Example:
 ```go
-//Set by default.
+//Disables collision between players. Set by default.
+playertoplayercollision = 0
+//Enables collision between players. Recommended for public servers.
 playertoplayercollision = 1
 ```
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/484/484562.png" width="26" height="26" /> **Server Configurations**
+# <img src="https://cdn-icons-png.flaticon.com/512/484/484562.png" width="32" height="32" /> **Server Configurations**
 
-The configurations listed below affects the server behaviors. Performance may vary.
+The configurations listed below affects the server behaviors. Performance will vary.
 
 -----
-## Framelimit
+## **FrameLimit**
 Sets the optimizatized framerate for the server.
+
+**_Note: If the framelimit is set below 60, the server will start to cause bugs with collision!_**
 
 Example:
 ```go
 //Set by default.
-framelimit = 5000
+framelimit = 300
 ```
 
 -----
-## Throughwallsbulletanticheat
+## **ThroughWallsBulletAntiCheat**
 Enable/Disable anti-cheat for projectile bullets in the server.
 
 Example:
 ```go
 //Set by default.
 throughwallsbulletanticheat = 0
+```
+-----
+## **ItemsRaycastCollision**
+Sets the Raycasting Collision for items.
+
+**_NOTE: This feature has been locked and fixed to output the maximum quality._**
+
+Example:
+```go
+//Set by default.
+itemsraycastcollision = 1
+```
+
+-----
+## **FixedTimeSteps**
+Sets fixed time steps.
+
+Example:
+```go
+//Set by default.
+fixedtimesteps = 0
+```
+
+-----
+## **DeltaLimit**
+Sets how many actions will happen during a lag. 
+
+Example:
+```go
+//Set by default. DO NOT change unless you know what you are doing!
+deltalimit = 5.0
+```
+
+-----
+## **MaxPlayersSpawn**
+Sets how many players will spawn as either MTF or Chaos during a spawn wave.
+
+Example:
+```go
+//Sets to spawn 8 players during the spawn wave. Set by default.
+maxplayersspawn = 8
+```
+
+-----
+## **FriendlyFire**
+Enable/Disable friendly fire in the server.
+
+Example:
+```go
+//Disables friendly fire. Set by default.
+friendlyfire = 0
+//Enables friendly fire.
+friendlyfire = 1
 ```

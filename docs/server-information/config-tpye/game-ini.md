@@ -57,7 +57,7 @@ interpolation = 1
 ## **PlayerToPlayerCollision**
 Enable/Disable collision between players in the server. 
 
-**_NOTE: This feature only works if `interpolation - 1' is set._**
+**_NOTE: This feature only works if `interpolation = 1` is set._**
 
 Example:
 ```go
@@ -76,7 +76,7 @@ The configurations listed below affects the server behaviors. Performance will v
 ## **FrameLimit**
 Sets the optimizatized framerate for the server.
 
-**_Note: If the framelimit is set below 60, the server will start to cause bugs with collision!_**
+**_Note: If the framelimit is set below 60, the server may experience some bugs from collision!_**
 
 Example:
 ```go

@@ -6,13 +6,62 @@ has_children: false
 nav_order: 6
 ---
 
-## Variables
+## <img src="https://cdn-icons-png.flaticon.com/512/2763/2763281.png" width="32" height="32" /> **Global Variables**
 {: .fs-7 }
 
 Tip: Adding the following command to your script `#include "includes\multiplayer_core.inc"` allows you to use variable names directly.
 {: .fs-4 .fw-300 .text-green-100 }
 
-| Player animations | Assigned Value |
+| Game Limitations | Assigned Value |
+|:-------------|:------------------|
+| MAX_OBJECTS | 65535 |
+| MAX_PLAYERS | 65 |
+| MAX_ROOMS | 200 |
+| MAX_DOORS | 500 |
+| MAX_NPCS | 255 |
+| MAX_EVENTS | 110 |
+| MAX_ITEMS | 1000 |
+
+| Miscellaneous Limitations | Assigned Value |
+|:-------------|:------------------|
+| MAX_PLUGINS | 64 |
+| MAX_INCLUDES | 64 |
+
+| Variable Limitations | Assigned Value |
+|:-------------|:------------------|
+| MAX_PLAYER_VARIABLES | 256 |
+| MAX_VARIABLES | 512 |
+
+| GUI Limitations | Assigned Value |
+|:-------------|:------------------|
+| MAX_DRAWS | 32 |
+| MAX_TEXTS | 32 |
+
+| Script Limitations | Assigned Value |
+|:-------------|:------------------|
+| MAX_PUBLICS | INFINITY |
+| MAX_PUBLICS_TICKS | 64 |
+| MAX_PUBLIC_PARAMS | 16 |
+
+| Anticheat Limitations | Assigned Value |
+|:-------------|:------------------|
+| CHEAT_NOITEM | 1 |
+| CHEAT_INCORRECT_ROLE | 2 |
+| CHEAT_INCORRECT_POS | 3 |
+| CHEAT_CONSOLE_USE | 4 |
+| CHEAT_SPAWN_ITEM | 5 |
+| CHEAT_INTERCOM | 6 |
+| CHEAT_NORECOILORSPREAD | 7 |
+
+| Plugins Types | Assigned Value |
+|:-------------|:------------------|
+| P_TYPE_BYTE | 1 |
+| P_TYPE_SHORT | 2 |
+| P_TYPE_INT | 3 |
+| P_TYPE_FLOAT | 4 |
+| P_TYPE_STRING | 5 |
+
+| Player Animations | Assigned Value |
 |:-------------|:------------------|
 | PLAYER_SITTING_IDLIN | 5 |
 | PLAYER_SITTING_WALKING_LEFT | 7 |

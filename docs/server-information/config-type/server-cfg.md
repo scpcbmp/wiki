@@ -15,9 +15,9 @@ The `server.cfg` is a configuration file which can be modified to run the server
 **_NOTE: For new users, please read thoroughly when setting up a server._**
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/4295/4295919.png" width="32" height="32" /> **Basic**
+# <img src="/assets/icons/requirement.png" width="32" height="32" /> **Basic**
 
-Some of the configuration settings listed below will have a star (<img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />) marker next to them. This will serve as a recommendation for new or returning users who are configuring a server may need the following settings to be changed if applicable.
+Some of the configuration settings listed below will have a star (<img src="/assets/icons/star.png" width="16" height="16" />) marker next to them. This will serve as a recommendation for new or returning users who are configuring a server may need the following settings to be changed if applicable.
 
 -----
 ## **HostName**
@@ -67,7 +67,7 @@ mapseed WhatEverTheSeedIWant
 ```
 
 -----
-## **NoCheat** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
+## **NoCheat** <img src="/assets/icons/star.png" width="16" height="16" />
 Enables/Restricts console access in-game for public use.
 
 Example:
@@ -91,7 +91,7 @@ voice false
 ```
 
 -----
-## **MinPlayersToStart** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
+## **MinPlayersToStart** <img src="/assets/icons/star.png" width="16" height="16" />
 Sets how many players are needed to start the game. 
 
 Example:
@@ -103,7 +103,7 @@ minplayerstostart 4
 ```
 
 -----
-## **MaxPlayers** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
+## **MaxPlayers** <img src="/assets/icons/star.png" width="16" height="16" />
 Sets how many players can be on the server at one time. 
 
 **_NOTE: The more players there are on the server at once, the more CPU the server consumes._**
@@ -131,7 +131,7 @@ password Sup3r5tr0ngP4ssw0rd
 ```
 
 -----
-## **RconPassword** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
+## **RconPassword** <img src="/assets/icons/star.png" width="16" height="16" />
 Sets the RCON console password. Used to gain "Administration" power via command "/rcon (password)" in the multiplayer chat.
 
 Example:
@@ -169,7 +169,7 @@ difficulty keter
 ```
 
 -----
-## **Breach** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
+## **Breach** <img src="/assets/icons/star.png" width="16" height="16" />
 Enable/Disable the Breach gamemode.
 
 Example:
@@ -181,7 +181,7 @@ breach true
 ```
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/4789/4789514.png" width="32" height="32" /> **Advanced**
+# <img src="/assets/icons/advancement.png" width="32" height="32" /> **Advanced**
 
 These sets of options are more technical and can impact how the server functions.
 
@@ -378,7 +378,7 @@ scripttext nameofthefile.gsc
 ```
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/2195/2195441.png" width="32" height="32" /> **Expert**
+# <img src="/assets/icons/rating.png" width="32" height="32" /> **Expert**
 This options are optional, and shouldn't be change unless needed.
 
 -----
@@ -490,7 +490,7 @@ speedhack_rate 100000.0  //Setting to 100000.0 will disable speedhack anticheat.
 ```
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/1100/1100349.png" width="32" height="32" /> **Breach Mode**
+# <img src="/assets/icons/alarm.png" width="32" height="32" /> **Breach Mode**
 
 The configuration settings listed below are for `Breach Mode` only. 
 
@@ -510,7 +510,7 @@ breachlight true
 ```
 
 -----
-## **BreachChat** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
+## **BreachChat** <img src="/assets/icons/star.png" width="16" height="16" />
 Enable/Disable chatting in Breach Mode.
 
 Example:
@@ -522,7 +522,7 @@ breachchat true
 ```
 
 -----
-## **BreachTime** <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" width="16" height="16" />
+## **BreachTime** <img src="/assets/icons/star.png" width="16" height="16" />
 Sets the max time limit of Breach Mode per round.
 
 Example:

@@ -1,35 +1,36 @@
 ---
 layout: default
-title: Script Creation
+title: Introduction to Creating a Script
 parent: Scripting Language
 has_children: false
 nav_order: 1
 ---
 
-# **Script Creation**
+# **Introduction to Creating a Script**
 {: .fs-9 .fw-600 }
+-----
 
 Dedicated server package comes with script examples, and script compiling software. Almost every aspect of the server can be modified. You can also add new content to the server. However we can't guaranty stable server using scripts.
 
 ## **Create your own script**
 Scripts use the custom programing language, called Skynet++. Skynet++ is based on Lua.
 
-## Getting Started
+## **Getting Started**
 First you will have to download server package in order to have examples and compiling software.
 
 You can download server package on steam.
 
-## Examples
+## **Examples**
 You should be able to see the example script in scripts folder. It's called `example.gs`, and `playerscript.lua`.
 
 Example scripts do nothing, but they can help you understand the language structure.
 
-## Building the Script
+## **Building the Script**
 Create your own script file, you can name it whatever you want.
 
 First you will have to include variables from the multiplayer mod:
 
-```cs
+```cpp
 #include "includes\multiplayer_core.inc"
 ```
 

@@ -15,7 +15,7 @@ The `game.ini` is a initialization file which can be modified to run the server.
 **_NOTE: This settings can only be configured if `fullsynchronization 1` is set in `server.cfg`._**
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/2579/2579208.png" width="32" height="32" /> **Player Configurations**
+# <img src="/assets/icons/wizard.png" width="32" height="32" /> **Player Configurations**
 
 The configurations listed below ONLY affects the player behaviors, and not the server.
 
@@ -68,7 +68,7 @@ playertoplayercollision = 1
 ```
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/484/484562.png" width="32" height="32" /> **Server Configurations**
+# <img src="/assets/icons/gear.png" width="32" height="32" /> **Server Configurations**
 
 The configurations listed below affects the server behaviors. Performance will vary.
 

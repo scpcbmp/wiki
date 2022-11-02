@@ -15,12 +15,7 @@ The `roles.ini` is a initialization file which can be modified to optimize a cha
 **_NOTE: Some configurations such as "HEALTH" and "SPEEDMULT" will only work if `fullsynchronization 1` is set in `server.cfg`._**
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/5009/5009866.png" width="32" height="32" /> **Key Functions**
-
-This is a placeholder message to see how long this can present until we hit a limit to start break dancing all on the ground, YAAAYYYYYYYY!!!
-
------
-# <img src="https://cdn-icons-png.flaticon.com/512/2807/2807191.png" width="32" height="32" /> **Character Classes**
+# <img src="/assets/icons/character-design.png" width="32" height="32" /> **Character Classes**
 
 Listed below are the available classes that can be modified.
 

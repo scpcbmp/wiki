@@ -12,7 +12,7 @@ nav_order: 1
 ---
 Please review the requirements listed below before proceeding to the [Installation](server-installation).
 
-## <img src="https://cdn-icons-png.flaticon.com/512/7310/7310293.png" width="26" height="26" /> CPU
+## <img src="/assets/icons/cpu.png" width="26" height="26" /> CPU
 
 | Supported | Recommended | Minimum |
 |:-------------|:-------------|:-------------|
@@ -23,12 +23,12 @@ A dedicated server can run perfectly fine on a single CPU core. However in `Brea
 **_NOTE: For macOS and Linux users, a more powerful CPU may be required in order to have smooth gameplay._**
 
 -----
-## <img src="https://cdn-icons-png.flaticon.com/512/7310/7310382.png" width="26" height="26" /> GPU
+## <img src="/assets/icons/graphic-card.png" width="26" height="26" /> GPU
 
 All dedicated server(s) are required to have a GPU in order to run the server. However, you can use a GPU emulator to run the server but in exchange it will take more CPU usage.
 
 -----
-## <img src="https://cdn-icons-png.flaticon.com/512/908/908522.png" width="26" height="26" /> RAM
+## <img src="/assets/icons/ram-memory.png" width="26" height="26" /> RAM
 
 | Maximum | Recommended | Minimum |
 |:-------------|:-------------|:-------------|
@@ -39,7 +39,7 @@ A windows dedicated server must have at least **1GB** of RAM (or maximum of **4G
 **_NOTE: A Linux or macOS server(s) may require more ram if you need to use a GPU emulator to run._**
 
 -----
-## <img src="https://cdn-icons-png.flaticon.com/512/2001/2001965.png" width="26" height="26" /> Storage
+## <img src="/assets/icons/hard-drive.png" width="26" height="26" /> Storage
 
 | Recommended | Minimum |
 |:-------------|:-------------|
@@ -48,7 +48,7 @@ A windows dedicated server must have at least **1GB** of RAM (or maximum of **4G
 A minimum of **1GB** (HDD or SSD) of storage is required to run the server. But over time, the server may take up more storage space due save logs, bans, etc. A **10GB** storage is recommended for longer uses. 
 
 -----
-## <img src="https://cdn-icons-png.flaticon.com/512/7310/7310353.png" width="26" height="26" /> Internet Access
+## <img src="/assets/icons/network-cable.png" width="26" height="26" /> Internet Access
 
 | Recommended | Minimum |
 |:-------------|:-------------|
@@ -61,6 +61,6 @@ At least **10** MB/s (or equivalent to **80** Mbps) is required for server to wo
 If you wish to run a server 24/7, you might need to set up your router to utilize a static IP address. However, a static IP might not be required if you simply intend to play with your friends.
 
 -----
-## <img src="https://cdn-icons-png.flaticon.com/512/7310/7310395.png" width="26" height="26" /> Operating System
+## <img src="/assets/icons/server.png" width="26" height="26" /> Operating System
 
 The server program was created and developed for Windows; however, utilizing Wine (on Linux) or a good emulator on macOS should be enough to run the server.

@@ -6,7 +6,7 @@ has_children: false
 nav_order: 6
 ---
 
-## <img src="https://cdn-icons-png.flaticon.com/512/2763/2763281.png" width="32" height="32" /> **Global Variables**
+## <img src="/assets/icons/world-structure.png" width="32" height="32" /> **Global Variables**
 {: .fs-7 }
 
 Tip: Adding the following command to your script `#include "includes\multiplayer_core.inc"` allows you to use variable names directly.
@@ -72,6 +72,14 @@ Tip: Adding the following command to your script `#include "includes\multiplayer
 | PLAYER_WALKING | 12 |
 | PLAYER_RUNNING | 13 |
 | PLAYER_CRYING | 14 |
+
+| Player Bones | Assigned Value |
+|:-------------|:------------------|
+| BONE_HEAD | 1 |
+| BONE_HAND | 2 |
+| BONE_SPINE | 3 |
+| BONE_SECONDSPINE | 4 |
+| BONE_FOREARM | 5  |
 
 | Player Armament | Assigned Value |
 |:-------------|:------------------|

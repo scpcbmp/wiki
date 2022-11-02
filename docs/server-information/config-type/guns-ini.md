@@ -15,7 +15,7 @@ The `guns.ini` is a initialization file which can be modified to optimize a guns
 **_NOTE: This settings can only be configured if `fullsynchronization 1` is set in `server.cfg`._**
 
 -----
-# <img src="https://cdn-icons-png.flaticon.com/512/3856/3856887.png" width="32" height="32" /> **Weapon Configurations**
+# <img src="/assets/icons/sniper.png" width="32" height="32" /> **Weapon Configurations**
 
 Listed below are the available weapon configurations that can be modified.
 
